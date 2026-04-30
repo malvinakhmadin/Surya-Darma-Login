@@ -23,16 +23,31 @@ function Home() {
           <div className="w-full relative shadow-2xl z-10 flex-shrink-0">
             <img 
               src={coverImage} 
-              alt="Hartono Rent Car Cover" 
+              alt="Hartono Rent Car — PT Surya Darma Perkasa" 
               className="w-full h-auto object-cover object-top block"
               style={{ maxHeight: '85vh' }}
             />
             {/* Soft gradient overlay at the bottom of the image to blend into the background */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0a152e] to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-16 sm:h-32 bg-gradient-to-t from-[#0a152e] to-transparent pointer-events-none" />
           </div>
 
           {/* Action Area */}
-          <div className="px-6 pb-12 pt-6 flex-1 flex flex-col items-center justify-start z-20 relative -mt-8">
+          <div className="px-5 sm:px-6 pb-10 pt-4 sm:pt-6 flex-1 flex flex-col items-center justify-start z-20 relative -mt-4 sm:-mt-8">
+            {/* Mobile-friendly company text (also visible on desktop for clarity) */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25, duration: 0.6 }}
+              className="w-full text-center mb-5 sm:mb-6"
+            >
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white">
+                PT SURYA DARMA PERKASA
+              </h1>
+              <p className="mt-1.5 text-xs sm:text-sm text-blue-200/70 leading-relaxed px-2">
+                Jl. Daan Mogot km 1 No. 99,<br className="sm:hidden" /> Kota Jakarta Barat,<br className="sm:hidden" /> DKI Jakarta 11510
+              </p>
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -54,7 +69,7 @@ function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="mt-12 w-full grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-blue-200/70"
+              className="mt-8 sm:mt-12 w-full max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 text-sm text-blue-200/70"
             >
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />

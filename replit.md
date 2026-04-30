@@ -1,27 +1,15 @@
-# Workspace
+# Hartono Rent Car (HARENT) — PT Surya Darma Perkasa
 
-## Overview
+A simple landing page for PT Surya Darma Perkasa (Hartono Rent Car), a Jakarta-based car rental company.
 
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+## Artifacts
 
-## Stack
+- **harent** (`artifacts/harent`, served at `/`): React + Vite single-page homepage. Displays the company cover image and a "Masuk (Login)" button that opens the company's Google Apps Script web app in a new tab.
+- **api-server** (`artifacts/api-server`, served at `/api`): Default Express server scaffold (not used by the homepage).
+- **mockup-sandbox** (`artifacts/mockup-sandbox`, served at `/__mockup`): Default canvas mockup sandbox.
 
-- **Monorepo tool**: pnpm workspaces
-- **Node.js version**: 24
-- **Package manager**: pnpm
-- **TypeScript version**: 5.9
-- **API framework**: Express 5
-- **Database**: PostgreSQL + Drizzle ORM
-- **Validation**: Zod (`zod/v4`), `drizzle-zod`
-- **API codegen**: Orval (from OpenAPI spec)
-- **Build**: esbuild (CJS bundle)
+## Key behavior
 
-## Key Commands
-
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- `pnpm --filter @workspace/api-server run dev` — run API server locally
-
-See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+- The login button on the homepage links to the company's Google Apps Script Web App URL (`target="_blank"`).
+- Cover image is sourced from `attached_assets/8e7798fa-7452-4433-afdb-1a2ed472b374_1777514305016.jpg` via the Vite `@assets` alias.
+- Theme uses a navy/blue palette derived from the HARENT brand identity.

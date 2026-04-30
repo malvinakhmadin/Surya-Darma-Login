@@ -37,16 +37,16 @@ function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="w-full max-w-sm"
+              className="w-full flex justify-center"
             >
               <a 
                 href="https://script.google.com/macros/s/AKfycbxGRlsxx2h4c3lC_UUxmRIrNk2oztCzTZuXO76UOCsUA8kkbQVWtUs3DP09ceSUnMU/exec"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center justify-center gap-2 w-full bg-[#1b5df1] hover:bg-[#154ac6] text-white py-4 px-8 rounded-xl font-medium text-lg shadow-[0_4px_20px_rgba(27,93,241,0.4)] transition-all duration-300 hover:shadow-[0_6px_25px_rgba(27,93,241,0.6)] hover:-translate-y-0.5 active:translate-y-0"
+                className="group relative inline-flex items-center justify-center gap-1.5 bg-[#1b5df1] hover:bg-[#154ac6] text-white py-2 px-5 rounded-lg font-medium text-sm tracking-wide shadow-[0_2px_10px_rgba(27,93,241,0.35)] transition-all duration-300 hover:shadow-[0_4px_14px_rgba(27,93,241,0.55)] hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Masuk (Login)</span>
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                <span>LOGIN</span>
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </motion.div>
             

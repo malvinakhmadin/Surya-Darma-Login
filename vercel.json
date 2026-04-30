@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install --no-frozen-lockfile --config.confirmModulesPurge=false",
+  "buildCommand": "pnpm --filter @workspace/harent run build",
+  "outputDirectory": "artifacts/harent/dist/public",
+  "framework": null
+}

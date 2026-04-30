@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Phone, Instagram, Facebook, Globe } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import coverImage from "@assets/8e7798fa-7452-4433-afdb-1a2ed472b374_1777514305016.jpg";
 import NotFound from "@/pages/not-found";
 
@@ -32,22 +32,7 @@ function Home() {
           </div>
 
           {/* Action Area */}
-          <div className="px-5 sm:px-6 pb-10 pt-4 sm:pt-6 flex-1 flex flex-col items-center justify-start z-20 relative -mt-4 sm:-mt-8">
-            {/* Mobile-friendly company text (also visible on desktop for clarity) */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.25, duration: 0.6 }}
-              className="w-full text-center mb-5 sm:mb-6"
-            >
-              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white">
-                PT SURYA DARMA PERKASA
-              </h1>
-              <p className="mt-1.5 text-xs sm:text-sm text-blue-200/70 leading-relaxed px-2">
-                Jl. Daan Mogot km 1 No. 99,<br className="sm:hidden" /> Kota Jakarta Barat,<br className="sm:hidden" /> DKI Jakarta 11510
-              </p>
-            </motion.div>
-
+          <div className="px-5 sm:px-6 pb-10 pt-4 sm:pt-6 flex flex-col items-center justify-start z-20 relative -mt-4 sm:-mt-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -63,36 +48,6 @@ function Home() {
                 <span>LOGIN</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
               </a>
-            </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.6 }}
-              className="mt-8 sm:mt-12 w-full max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 text-sm text-blue-200/70"
-            >
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
-                <p>Jl. Daan Mogot km 1 No. 99<br/>Kota Jakarta Barat, DKI Jakarta 11510</p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <a href="tel:081119027888" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
-                  <Phone className="w-5 h-5 text-blue-400 shrink-0" />
-                  <span>0811-1902-7888</span>
-                </a>
-                <a href="https://hartonorentcar.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
-                  <Globe className="w-5 h-5 text-blue-400 shrink-0" />
-                  <span>hartonorentcar.com</span>
-                </a>
-                <div className="flex items-center gap-4 mt-1">
-                  <a href="https://instagram.com/hartono.rentcar" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                    <Instagram className="w-5 h-5" />
-                  </a>
-                  <a href="https://facebook.com/HartonoRentCar" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                    <Facebook className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
             </motion.div>
           </div>
         </motion.div>

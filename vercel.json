@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "pnpm install --no-frozen-lockfile --config.confirmModulesPurge=false",
-  "buildCommand": "pnpm --filter @workspace/harent run build && node -e \"const fs=require('fs');const path=require('path');const src=path.resolve('artifacts/harent/dist/public');const dst=path.resolve('public');console.log('Copying',src,'->',dst);fs.rmSync(dst,{recursive:true,force:true});fs.cpSync(src,dst,{recursive:true});console.log('Done. Contents:',fs.readdirSync(dst))\"",
+  "buildCommand": "pnpm run vercel-build",
   "outputDirectory": "public",
   "framework": null
 }

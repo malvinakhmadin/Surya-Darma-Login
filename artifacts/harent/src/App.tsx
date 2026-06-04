@@ -40,7 +40,7 @@ function Home() {
               className="w-full flex justify-center"
             >
               <a 
-                href="https://script.google.com/macros/s/AKfycbwR5b5FpjSDeljR5D4k4hiL0f5XSSKbwUXMygrOu7u0hH1peU4FcZ1-rHJx1sju-jXz/exec"
+                href="https://script.google.com/macros/s/AKfycbzN-kRqo7_DaZsoisa5r9hfjY918jRr27k7PIleRgtAHOxgPIrQq3yKIXnrizqKkKIu/exec"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center gap-1.5 bg-[#1b5df1] hover:bg-[#154ac6] text-white py-2 px-5 rounded-lg font-medium text-sm tracking-wide shadow-[0_2px_10px_rgba(27,93,241,0.35)] transition-all duration-300 hover:shadow-[0_4px_14px_rgba(27,93,241,0.55)] hover:-translate-y-0.5 active:translate-y-0"
